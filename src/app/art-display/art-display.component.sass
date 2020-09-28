@@ -1,0 +1,59 @@
+$fixedSize: 512px
+
+.loading-overlay
+   position: absolute
+   top: 0
+   bottom: 0
+   left: 0
+   right: 0
+   display: flex
+   justify-content: center
+   align-items: center
+
+   background: white
+
+   &:not(.loading)
+      display: none
+
+.card-container
+   height: 100%
+   width: 100%
+   display: flex
+   justify-content: center
+   align-items: center
+   flex-direction: column
+
+.card-art-container
+   position: relative
+
+.card-art
+   opacity: 1
+   animation: fadeIn 3s ease
+
+   height: #{"min(" + $fixedSize + ", 100vw)"}
+
+   margin: 10px 0
+
+   &.not-loaded
+      visibility: hidden
+
+.card-name
+   font-size: 20px
+
+.card-flavor
+   font-size: 17px
+   font-style: italic
+   text-align: center
+
+.card-artist
+   font-size: 15px
+   font-weight: bold
+
+@keyframes fadeIn
+   0%
+      opacity: 0
+
+   100%
+      opacity: 1
+
+
