@@ -76,8 +76,6 @@ export class AuthorizationService implements HttpInterceptor {
 
       const params = new HttpParams().set('grant_type', 'client_credentials');
 
-      console.log('params: ', params);
-
       return this.http.post<TokenResponse>(
          'https://us.battle.net/oauth/token',
          {},

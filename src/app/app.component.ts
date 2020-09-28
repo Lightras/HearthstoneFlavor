@@ -25,8 +25,6 @@ export class AppComponent implements OnInit {
 
       this.hsJsonService.getAllCards().subscribe(cards => {
          this.cards = cards;
-         console.log('this.cards: ', this.cards);
-
          this.displayCard = this.getRandomCard();
       });
    }

@@ -1,0 +1,13 @@
+<div class="info-button" (click)="showInfo()">
+   <img src="assets/images/info.png" alt="info icon">
+</div>
+<div class="info-box" *ngIf="isShowInfo">
+   <p>This app's purpose is to bring those beautiful arts and funny descriptions behind your favorite Hearthstone cards closer to you.</p>
+   <p>Right now it simply shows a random card (tap or click on it to refresh).</p>
+   <p>If you like the app, please share it.</p>
+   <p><a href="mailto:o.v.rabota@gmail.com">Please write to me</a> if you have any thoughts about it.</p>
+
+   <div (click)="hideInfo()" class="close-info-btn">
+      <img src="assets/images/close.png" alt="close button">
+   </div>
+</div>

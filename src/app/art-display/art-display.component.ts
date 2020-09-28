@@ -20,13 +20,11 @@ export class ArtDisplayComponent implements OnInit, OnChanges {
    ngOnChanges(changes: SimpleChanges): void {
       if (changes.card) {
          this.isImgLoaded = false;
-         console.log('FALSE');
       }
    }
 
    imgOnload(): void {
       this.isImgLoaded = true;
-      console.log('TRUE');
    }
 
 }

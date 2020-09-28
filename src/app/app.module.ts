@@ -6,11 +6,13 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {AuthorizationService} from './authorization.service';
 import {HsJsonService} from './hs-json.service';
 import { ArtDisplayComponent } from './art-display/art-display.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
    declarations: [
       AppComponent,
-      ArtDisplayComponent
+      ArtDisplayComponent,
+      InfoComponent
    ],
    imports: [
       BrowserModule,
